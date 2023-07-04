@@ -10,9 +10,9 @@ metadata:
   name: proxy
 spec:
   ports:
-    - name: "443"
-      port: 443
-      targetPort: 443
+    - name: "9443"
+      port: 9443
+      targetPort: 9443
   selector:
     io.kompose.service: proxy
 status:
