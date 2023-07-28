@@ -36,6 +36,8 @@ spec:
           name: jenkins
           ports:
             - containerPort: 8443
+              hostPort: 8443
+              protocol: TCP
           resources: {}
           volumeMounts:
             - mountPath: /var/jenkins_home/certificate
