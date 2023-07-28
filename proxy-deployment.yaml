@@ -29,7 +29,9 @@ spec:
         - image: nginx:stable
           name: proxy
           ports:
-            - containerPort: 443
+            - containerPort: 9443
+              hostPort: 9443
+              protocol: TCP
           resources: {}
           volumeMounts:
           - name: proxy-conf
