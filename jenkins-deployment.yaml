@@ -42,10 +42,6 @@ spec:
           volumeMounts:
             - mountPath: /var/jenkins_home/certificate
               name: jenkins-cert
-            - mountPath: /usr/bin/docker
-              name: user-bin-docker
-            - mountPath: /var/run/docker.sock
-              name: var-run-docker-sock
             - mountPath: /project
               name: project
             - mountPath: /var/jenkins_home
@@ -55,12 +51,6 @@ spec:
         - name: jenkins-cert
           configMap:
             name: jenkins-keystore
-        - name: user-bin-docker
-          hostPath:
-            path: /usr/bin/docker
-        - name: var-run-docker-sock
-          hostPath:
-            path: /var/run/docker.sock
         - name: project
           hostPath:
             path: /var/nita_project
