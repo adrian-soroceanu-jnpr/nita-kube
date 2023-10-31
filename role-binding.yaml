@@ -1,5 +1,6 @@
 kind: RoleBinding
 metadata:
+  namespace: nita
   name: modify-pods-to-sa
 subjects:
   - kind: ServiceAccount
