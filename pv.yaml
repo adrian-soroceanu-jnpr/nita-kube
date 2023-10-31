@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
+  namespace: nita
   name: task-pv-volume
   labels:
     type: local
