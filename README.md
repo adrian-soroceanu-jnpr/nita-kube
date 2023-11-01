@@ -57,7 +57,9 @@ Other special considerations are configmaps for jenkins and proxy:
 ```
 kubectl create cm jenkins-keystore --from-file=/home/jcluser/nita-jenkins/certificates/jenkins_keystore.jks --namespace nita
 ```
+```
 kubectl create cm proxy-config-cm --from-file=/home/jcluser/nginx/nginx.conf --namespace nita
+```
 ```
 kubectl create cm proxy-cert-cm --from-file=/home/jcluser/nginx/certificates/ --namespace nita
 ```
