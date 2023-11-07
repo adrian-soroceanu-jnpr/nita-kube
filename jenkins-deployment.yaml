@@ -26,6 +26,7 @@ spec:
         io.kompose.network/nita-network: "true"
         io.kompose.service: jenkins
     spec:
+      serviceAccount: internal-jenknis-pod
       securityContext:
         fsGroup: 1000
         runAsUser: 0
